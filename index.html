@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>WEB222 Store</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Oswald"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Tenor+Sans"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato"
+            rel="stylesheet"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap Stylesheet -->
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="toprow">
+                <nav id="navbar" class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <img
+                                src="images/logo.png"
+                                alt="logo"
+                                width="40"
+                                height="40"
+                            />
+                            <a class="navbar-brand" href="./index.html"
+                                >Woodbine Cat Rescue</a
+                            >
+                            <a class="navbar-contact" href="./contact.html"
+                                >Contact us</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Get a bunch of these columns to make a grid of cards -->
+        <div class="container-fluid">
+            <div class="row" id="sidebar-content">
+                <div class="col-md-2" id="side-bar">
+                    <button id="updateContent" class="btn btn-default">
+                        Update
+                    </button>
+                    <button id="clearFilter" class="btn btn-default">
+                        Clear Filters
+                    </button>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="dropdown-button"
+                            >Select By Breed <b class="caret"></b
+                        ></a>
+                        <ul
+                            class="dropdown-menu"
+                            id="breedsDropDown"
+                            style="display: none;"
+                        ></ul>
+                    </div>
+
+                    <p>--- OR ---</p>
+
+                    <div id="other-options">
+                        <div class="checkbox secondary-options">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="allergenic"
+                                    class="btn"
+                                    value=""
+                                />
+                                Hypo-Allergenic</label
+                            >
+                        </div>
+                        <div class="checkbox secondary-options">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="hairless"
+                                    class="btn"
+                                    value=""
+                                />
+                                Hairless</label
+                            >
+                        </div>
+                        <div class="checkbox secondary-options">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="indoor"
+                                    class="btn"
+                                    value=""
+                                />
+                                Indoor</label
+                            >
+                        </div>
+                        <div class="checkbox secondary-options">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="rare"
+                                    class="btn"
+                                    value=""
+                                />
+                                Rare</label
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md" id="content-container">
+                    <div class="row" id="banner-container">
+                        <div id="banner">
+                            <h1>&nbsp;</h1>
+                        </div>
+                    </div>
+
+                    <div id="store-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <form
+                    action="https://formspree.io/murrelljenna@gmail.com"
+                    method="POST"
+                >
+                    <div id="subscribe" class="form-group">
+                        <label for="email-address">Subscribe: </label>
+                        <input
+                            type="email"
+                            id="email-address"
+                            name="name"
+                            placeholder="eg. firstname_lastname@domain.ca"
+                            size="35"
+                            required
+                        />
+                        <button
+                            type="submit"
+                            id="submit-button"
+                            class="btn btn-primary"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    Icons made by
+                    <a href="https://www.freepik.com/" title="Freepik"
+                        >Freepik</a
+                    >
+                    from
+                    <a href="https://www.flaticon.com/" title="Flaticon"
+                        >www.flaticon.com</a
+                    >
+                    is licensed by
+                    <a
+                        href="http://creativecommons.org/licenses/by/3.0/"
+                        title="Creative Commons BY 3.0"
+                        target="_blank"
+                        >CC 3.0 BY</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Navbar or Title bar across the top must include your store's name, logo,
+      and use a darker background colour, different font, etc.  You must also include
+      a link to your contact.html page.
+
+      2. Header below the navbar with store Title in appropriate font, as well
+      as info about what the store is, what it sells, etc.  Use some images to
+      try and draw the user in.  NOTE: place all your site's images in the
+      src/images/ directory.
+
+      3. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. Each item should include: picture, title, description,
+      category, and price. Each item should be its own "card" (i.e., some kind of
+      box around each item separating one from the next, with suitable
+      whitespace between).
+
+      4. A sidebar on the left or right of the item layout section, showing the
+      different categories of items in your store.  If a user clicks on one of the
+      categories, use CSS and JavaScript to hide all other items in the store.
+      Make sure you include a way to once again see all categories, and make it
+      obvious to the user they they are only seeing a partial list of items when you
+      filter by category (i.e., use CSS and HTML to change things somehow).
+
+           6. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.
+
+      7. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours, and use them throughout your site for backgrounds, borders, fonts.
+      Your store page needs to look attractive and marks will be given for good a
+      good looking site.
+
+      8. You are welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      9. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them.
+      Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+      -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="module"
+            crossorigin="anonymous"
+            src="js/names.js"
+        ></script>
+        <script
+            type="module"
+            crossorigin="anonymous"
+            src="js/script.js"
+        ></script>
+    </body>
+
+    <!-- ADD FOOTER
+       5. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking Subscribe to subscribe to the store's newsletter. Use
+      https://formspree.io/ to automatically submit the form to your email address
+      (i.e., when a user fills out their email address and clicks submit, *you*
+      should get that information sent to your email address via formspree.io).
+  -->
+</html>

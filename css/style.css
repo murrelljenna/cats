@@ -1,0 +1,193 @@
+/** Add any CSS you need to this file. */
+
+.card-text {
+    color: black;
+    font-family: "Oswald", sans-serif;
+}
+
+button {
+    padding: 10px;
+    margin: 0;
+}
+
+#navbar {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    z-index: 1000;
+    background-color: #69779b;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+form label {
+    font-family: "Montserrat", "Lato", sans-serif;
+    display: inline-block;
+}
+
+textarea {
+    height: 200px;
+    width: 400px;
+}
+
+div.container {
+    padding-left: 14px;
+}
+
+#sidebar-content {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#banner-container {
+    border-top-style: solid;
+}
+
+.card {
+    width: 18rem;
+    margin: 0.5em;
+    background-image: none;
+    border-style: solid;
+}
+
+.dropdown {
+    margin-top: 22px;
+}
+
+.btn {
+    background-color: #69779b;
+}
+
+#contact {
+    margin-top: 25px;
+}
+
+#contact-container {
+    margin-left: 240px;
+}
+
+.btn-default {
+    padding-left: 0;
+    color: white;
+    display: block;
+}
+
+.container-fluid {
+    margin: 0;
+    width: 100%;
+}
+
+#subscribe {
+    text-align: center;
+}
+
+#breedsDropDown {
+    display: none;
+}
+
+.navbar-header {
+    margin-left: 85px;
+}
+
+.navbar-brand {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 30px;
+}
+
+.navbar-contact {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 20px;
+}
+
+#submit-button {
+    padding-top: 2px;
+    background-color: white;
+    color: black;
+    height: 30px;
+}
+
+.col-md {
+    margin-right: 0;
+}
+
+#content-container {
+    border-bottom-style: solid;
+}
+
+a,
+a:visited,
+a:hover {
+    color: white;
+}
+
+#side-bar {
+    border-right-style: solid;
+    background-color: #69779b;
+    bottom: 0;
+}
+
+img {
+    max-width: 286px;
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 1px;
+    background-color: #69779b;
+    color: white;
+}
+
+p {
+    margin-top: 1rem;
+    color: white;
+}
+
+.dropdown-menu {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    overflow: scroll;
+    display: none;
+    border: none;
+    background: none;
+    text-align: left;
+    outline: none;
+    margin-bottom: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.dropdown-menu input {
+    cursor: pointer;
+}
+
+.secondary-options {
+    color: white;
+}
+
+.secondary-options input,
+.secondary-options label {
+    color: white;
+    display: inline;
+}
+
+#banner {
+    background-color: #acdddf;
+    width: 100%;
+    border-bottom-style: solid;
+}
+
+#banner h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
